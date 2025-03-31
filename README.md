@@ -28,12 +28,13 @@ This addon is a remake of the **PartyBot Command Panel (PCP)** for **World of Wa
   <img src="screens/4.jpg" alt="Preset Selection" width="300">
   <img src="screens/3.jpg" alt="Preset Selection" width="300">
   <img src="screens/2.jpg" alt="Preset Selection" width="300">
+  <img src="screens/1.jpg" alt="Preset Selection" width="300">
   <br>
   <em>(Not showing all themes)</em>
 </p>
 
 <p align="center">
-  <img src="screens/sett.jpg" alt="Settings" width="400">
+  <img src="screens/sett.jpg" alt="Settings" width="100">
 </p>
 
 - **Backdrop and Title Background:**
