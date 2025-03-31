@@ -20,7 +20,7 @@ This addon is a remake off the **PartyBot Command Panel (PCP)** for **World of W
 
 - **Themes:**
   You can chose a theme if you would like another color.
-![Preset Selection](ScreenShots/4.jpg)
+![Preset Selection](Screens/4.jpg)
 - **Controll bots when you are dead:**
   - You can controll bots when you are dead.
     
