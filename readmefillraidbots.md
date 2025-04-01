@@ -122,11 +122,6 @@ The addon includes optimized presets for several dungeons and raids:
 - To edit how often a message should be displayed, modify the `SuppressBotMsg.lua` file.
 - To add or change a preset, modify the `Presets.lua` file.
 
-## 📅 Changelog
-
-[See the full changelog in the GitHub repository.](https://github.com/pumpan/FillRaidBots#changelog)
-
-
 
 ## 📅 Changelog
 
