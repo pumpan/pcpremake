@@ -1,6 +1,6 @@
 # FillRaidBots
 
-![Version](https://img.shields.io/badge/version-2.1.0-blue)
+![Version](https://img.shields.io/badge/version-3.0.0-blue)
 ![WoW Version](https://img.shields.io/badge/WoW-1.12.1-ff69b4)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
@@ -23,7 +23,7 @@ This addon is an extension for the **PartyBot Command Panel (PCP)** for **World 
 
 - **Automated Interface Creation:**
   - Automatically creates and opens the "Fill Raid" and "Kick All" buttons when accessing the PartyBot Command Panel.
-  
+
 <p align="center">
   <img src="/screens/newbuttons.png" alt="Configuration Frame">
   <img src="https://github.com/pumpan/FillRaidBots/blob/main/ScreenShots/fillraidbots.png" alt="Configuration Frame" width="400">
@@ -32,9 +32,8 @@ This addon is an extension for the **PartyBot Command Panel (PCP)** for **World 
 - **Fill Raid Button:**
   - Opens a configuration frame to specify the number of bots to add.
   - Allows users to choose from predefined presets for different raid instances.
-  
-<p align="center">
 
+<p align="center">
   <img src="https://github.com/pumpan/FillRaidBots/blob/main/ScreenShots/fillraidbots3.png" alt="Preset Selection" width="400">
 </p>
 
@@ -44,16 +43,18 @@ This addon is an extension for the **PartyBot Command Panel (PCP)** for **World 
 - **Refill Raid Button:**
   - Automatically replaces bots that die and are removed during gameplay.
 
-- **Fast fill**
-- Possibility to add bots with ctrl+alt+mouse click on bosses wich adds the preset raid setup for the boss.
+- **Fast Fill:**
+  - Quickly fills the raid with bots using optimized settings.
 
-- **Loot type option**
-- Automatically change the loot type on raid creation to the selected one.
-  
+- **Boss-Specific Presets:**
+  - Add bots using `Ctrl + Alt + Mouse Click` on bosses to instantly load the preset raid setup.
+
+- **Loot Type Option:**
+  - Automatically changes the loot type on raid creation to the selected one.
+
 - **Settings Menu:**
   - Options to enable automatic dead bot removal and suppress bot messages for a cleaner interface.
-  - 
-  
+
 <p align="center">
   <img src="/screens/frbsettings.png" alt="Settings Menu">
 </p>
@@ -98,12 +99,12 @@ This addon is an extension for the **PartyBot Command Panel (PCP)** for **World 
 7. **Slash Commands:**  
    - You can create macros for the following commands:
      ```
-     /frb ua         - Uninvite all raid members but save friends and guild members.
-     /frb uninvite all - Uninvite all raid members but save friends and guild members.
+     /frb ua             - Uninvite all raid members but save friends and guild members.
+     /frb uninvite all   - Uninvite all raid members but save friends and guild members.
      /frb (preset)       - Automatically fill the raid with the preset.
-     /frb open       - Open the Fill Raid frame.
-     /frb refill     - Refill the raid.
-     /frb fixgroups  - Fix raid groups.
+     /frb open           - Open the Fill Raid frame.
+     /frb refill         - Refill the raid.
+     /frb fixgroups      - Fix raid groups.
      ```
 
 ## 🗺️ Presets
@@ -120,6 +121,12 @@ The addon includes optimized presets for several dungeons and raids:
 
 - To edit how often a message should be displayed, modify the `SuppressBotMsg.lua` file.
 - To add or change a preset, modify the `Presets.lua` file.
+
+## 📅 Changelog
+
+[See the full changelog in the GitHub repository.](https://github.com/pumpan/FillRaidBots#changelog)
+
+
 
 ## 📅 Changelog
 
