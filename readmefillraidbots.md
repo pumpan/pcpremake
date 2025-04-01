@@ -127,7 +127,8 @@ The addon includes optimized presets for several dungeons and raids:
 
 **FillRaidBots 3.0.0**
 
-    🔄 Version updated: to 3.0.0, introducing multiple improvements to performance, user experience, and new features.
+    🔄 Version updated: to 3.0.0, Since FillRaidBots now introduces multiple usability upgrades, UI options, new commands, 
+    and extended compatibility, it’s a big leap forward, making 3.0.0 the right version number.
     🆕 Edited: you can now use /frb (bossname or part of bossname eg: ony or /frb mage group) (suggestion by Gemma)
     🆕 Added: A new feature to add preset bots with ctrl+alt+mouse click on bosses
     🆕 Added: Settings to chose if you want big or small (round) Buttons (fill raid, Kick all etc)
@@ -136,7 +137,7 @@ The addon includes optimized presets for several dungeons and raids:
 🛠 Improvements:
 
     🆕 Edited: you can now use /frb (bossname or part of bossname eg: ony) instead of /frb fill
-
+    🆕 Edited: you can now use /frb (bossname or part of bossname eg: ony) instead of /frb fill
 
 **FillRaidBots 2.1.0**
 
