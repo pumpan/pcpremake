@@ -25,6 +25,7 @@ This addon is an extension for the **PartyBot Command Panel (PCP)** for **World 
   - Automatically creates and opens the "Fill Raid" and "Kick All" buttons when accessing the PartyBot Command Panel.
   
 <p align="center">
+  <img src="/screens/newbuttons.png" alt="Configuration Frame">
   <img src="https://github.com/pumpan/FillRaidBots/blob/main/ScreenShots/fillraidbots.png" alt="Configuration Frame" width="400">
 </p>
 
@@ -33,6 +34,7 @@ This addon is an extension for the **PartyBot Command Panel (PCP)** for **World 
   - Allows users to choose from predefined presets for different raid instances.
   
 <p align="center">
+
   <img src="https://github.com/pumpan/FillRaidBots/blob/main/ScreenShots/fillraidbots3.png" alt="Preset Selection" width="400">
 </p>
 
@@ -46,7 +48,7 @@ This addon is an extension for the **PartyBot Command Panel (PCP)** for **World 
   - Options to enable automatic dead bot removal and suppress bot messages for a cleaner interface.
   
 <p align="center">
-  <img src="https://github.com/pumpan/FillRaidBots/blob/main/ScreenShots/fillraidbots4.png" alt="Settings Menu" width="400">
+  <img src="/screens/frbsettings.png" alt="Settings Menu">
 </p>
 
 ## 🛠️ Installation
@@ -91,7 +93,7 @@ This addon is an extension for the **PartyBot Command Panel (PCP)** for **World 
      ```
      /frb ua         - Uninvite all raid members but save friends and guild members.
      /frb uninvite all - Uninvite all raid members but save friends and guild members.
-     /frb fill       - Automatically fill the raid.
+     /frb (preset)       - Automatically fill the raid with the preset.
      /frb open       - Open the Fill Raid frame.
      /frb refill     - Refill the raid.
      /frb fixgroups  - Fix raid groups.
@@ -116,7 +118,17 @@ The addon includes optimized presets for several dungeons and raids:
 (Include the detailed changelog here as per your original content.)
 
 
+**FillRaidBots 3.0.0**
 
+    🔄 Version updated: to 3.0.0, introducing multiple improvements to performance, user experience, and new features.
+    🆕 Edited: you can now use /frb (bossname or part of bossname eg: ony or /frb mage group) (suggestion by Gemma)
+    🆕 Added: A new feature to add preset bots with ctrl+alt+mouse click on bosses
+    🆕 Added: Settings to chose if you want big or small (round) Buttons (fill raid, Kick all etc)
+    🆕 Added: You can now Select automatic loot type on raid creation in the settings menu.
+
+🛠 Improvements:
+
+    🆕 Edited: you can now use /frb (bossname or part of bossname eg: ony) instead of /frb fill
 
 
 **FillRaidBots 2.1.0**
