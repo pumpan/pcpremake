@@ -1,4 +1,3 @@
-
 # PCPRemake
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
@@ -44,7 +43,7 @@ This addon is a remake of the **PartyBot Command Panel (PCP)** for **World of Wa
   - Maintain control of bots even when your character has died.
 
 - **Reset Frame Position:**
-  - Use the command:  
+  - Use the command:
     ```
     /movepcp
     ```
@@ -56,7 +55,7 @@ This addon is a remake of the **PartyBot Command Panel (PCP)** for **World of Wa
   - Removed the "Add Random" button (it seemed unnecessary to add a random bot).
   - Moved the close button from the bottom to the upper right corner.
   - Changed the minimap button image.
-  - Removed everything from the xml file and remade every button and frame in the lua file wich opened up new possibilities eg resize the frame.
+  - Removed everything from the XML file and remade every button and frame in the Lua file, which opened up new possibilities, such as resizing the frame.
 
 ## 🛠️ Installation
 
@@ -79,11 +78,8 @@ This addon is a remake of the **PartyBot Command Panel (PCP)** for **World of Wa
 1. **Open the PartyBot Command Panel:**  
    - Click the icon on the minimap.
 
-
 ## 📅 Changelog
 
 **PCPRemake 1.0.0**  
 🆕 **NEW:** First release.
-
-
 
