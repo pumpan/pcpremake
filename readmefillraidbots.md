@@ -134,10 +134,11 @@ The addon includes optimized presets for several dungeons and raids:
     🆕 Added: Settings to chose if you want big or small (round) Buttons (fill raid, Kick all etc)
     🆕 Added: You can now Select automatic loot type on raid creation in the settings menu.
     🆕 Added: Works with both PCP and PCPRemake
+    🆕 Added: You can now reload ui with /rl /reloadui /reload    
 🛠 Improvements:
+  
+    🆕 Edited: you can now use /frb (bossname or part of bossname eg: ony) instead of /frb fill
 
-    🆕 Edited: you can now use /frb (bossname or part of bossname eg: ony) instead of /frb fill
-    🆕 Edited: you can now use /frb (bossname or part of bossname eg: ony) instead of /frb fill
 
 **FillRaidBots 2.1.0**
 
