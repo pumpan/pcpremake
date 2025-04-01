@@ -38,6 +38,10 @@ This addon is a remake of the **PartyBot Command Panel (PCP)** for **World of Wa
 
 - **Backdrop and Title Background:**
   - Choose whether to display a backdrop behind the command panel and a background for the titles (like "Come Commands," "Stay Commands," "Move Commands").
+- **New minimap button:**
+  <p align="center">
+  <img src="screens/minimapbutton.png" alt="Settings" width="100">
+</p>
 
 - **Control Bots When Dead:**
   - Maintain control of bots even when your character has died.
