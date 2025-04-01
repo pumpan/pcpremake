@@ -46,7 +46,7 @@ This addon is a remake of the **PartyBot Command Panel (PCP)** for **World of Wa
 - **Reset Frame Position:**
   - Use the command:  
     ```
-    /pcp move
+    /movepcp
     ```
     This moves the PCP frame to your cursor, resolving an issue from the original addon where the frame sometimes appeared off-screen.
 
