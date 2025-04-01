@@ -54,6 +54,9 @@ This addon is a remake of the **PartyBot Command Panel (PCP)** for **World of Wa
   - Icons instead of text for CC marks and focus targets, sorted in the same order as when marking a target.
   - Removed the "Add" button; now you add a bot by clicking the "role button" (e.g., "Tank").
   - Removed the "Add Random" button (it seemed unnecessary to add a random bot).
+  - Moved the close button from the bottom to the upper right corner.
+  - Changed the minimap button image.
+  - Removed everything from the xml file and remade every button and frame in the lua file wich opened up new possibilities eg resize the frame.
 
 ## 🛠️ Installation
 
