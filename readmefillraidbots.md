@@ -44,8 +44,15 @@ This addon is an extension for the **PartyBot Command Panel (PCP)** for **World 
 - **Refill Raid Button:**
   - Automatically replaces bots that die and are removed during gameplay.
 
+- **Fast fill**
+- Possibility to add bots with ctrl+alt+mouse click on bosses wich adds the preset raid setup for the boss.
+
+- **Loot type option**
+- Automatically change the loot type on raid creation to the selected one.
+  
 - **Settings Menu:**
   - Options to enable automatic dead bot removal and suppress bot messages for a cleaner interface.
+  - 
   
 <p align="center">
   <img src="/screens/frbsettings.png" alt="Settings Menu">
@@ -115,8 +122,6 @@ The addon includes optimized presets for several dungeons and raids:
 - To add or change a preset, modify the `Presets.lua` file.
 
 ## 📅 Changelog
-(Include the detailed changelog here as per your original content.)
-
 
 **FillRaidBots 3.0.0**
 
@@ -125,7 +130,7 @@ The addon includes optimized presets for several dungeons and raids:
     🆕 Added: A new feature to add preset bots with ctrl+alt+mouse click on bosses
     🆕 Added: Settings to chose if you want big or small (round) Buttons (fill raid, Kick all etc)
     🆕 Added: You can now Select automatic loot type on raid creation in the settings menu.
-
+    🆕 Added: Works with both PCP and PCPRemake
 🛠 Improvements:
 
     🆕 Edited: you can now use /frb (bossname or part of bossname eg: ony) instead of /frb fill
