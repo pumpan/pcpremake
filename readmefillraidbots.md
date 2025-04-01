@@ -33,7 +33,7 @@ This addon is an extension for the **PartyBot Command Panel (PCP)** for **World 
   - Allows users to choose from predefined presets for different raid instances.
   
 <p align="center">
-  <img src="ScreenShots/fillraidbots3.png" alt="Preset Selection" width="400">
+  <img src="https://github.com/pumpan/FillRaidBots/blob/main/ScreenShots/fillraidbots3.png" alt="Preset Selection" width="400">
 </p>
 
 - **Kick All Button:**
@@ -46,7 +46,7 @@ This addon is an extension for the **PartyBot Command Panel (PCP)** for **World 
   - Options to enable automatic dead bot removal and suppress bot messages for a cleaner interface.
   
 <p align="center">
-  <img src="ScreenShots/fillraidbots4.png" alt="Settings Menu" width="400">
+  <img src="https://github.com/pumpan/FillRaidBots/blob/main/ScreenShots/fillraidbots4.png" alt="Settings Menu" width="400">
 </p>
 
 ## 🛠️ Installation
