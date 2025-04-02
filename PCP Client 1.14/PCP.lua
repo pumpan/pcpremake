@@ -1762,12 +1762,10 @@ end
 
 function SetMark(arg)
 	SendChatMessage(CMD_GENERAL .. AddMark .. " " .. arg);
-	print("SetMark " .. AddMark)
 end
 
 function ShowMark()
 	SendChatMessage(CMD_GENERAL .. AddMark);
-	print("ShowMark " .. AddMark)	
 end
 
 function ClearMark()

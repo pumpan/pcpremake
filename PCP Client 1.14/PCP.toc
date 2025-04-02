@@ -1,4 +1,4 @@
-## Interface: 11200
+## Interface: 11402
 ## Title: |cffeda55fPartyBot|r Control Panel
 ## Notes: PartyBot Control Panel.
 ## Notes-zhCN: PartyBot Control Panel.
