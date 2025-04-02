@@ -2,7 +2,7 @@
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
 ![WoW Version](https://img.shields.io/badge/WoW-1.12.1-ff69b4)
-![WoW Version](https://img.shields.io/badge/WoW-1.14.1-ff69b4)
+![WoW Version](https://img.shields.io/badge/WoW-1.14.2-ff69b4)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 ## 📋 Table of Contents
