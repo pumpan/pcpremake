@@ -1,0 +1,3 @@
+<Bindings>
+	<Binding name="Partybot_CP" header="PartybotCP">ShowToggle()</Binding>
+</Bindings>
