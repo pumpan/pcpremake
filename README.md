@@ -2,6 +2,7 @@
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
 ![WoW Version](https://img.shields.io/badge/WoW-1.12.1-ff69b4)
+![WoW Version](https://img.shields.io/badge/WoW-1.14.1-ff69b4)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 ## 📋 Table of Contents
@@ -13,7 +14,7 @@
 
 ## 📝 Overview
 
-This addon is a remake of the **PartyBot Command Panel (PCP)** for **World of Warcraft (WoW) 1.12.1**. It is more customizable than the original addon and introduces new features, including the ability to control bots when you are dead. Additionally, it replaces text-based target markers with sorted icons for a more intuitive experience.
+This addon is a remake of the **PartyBot Command Panel (PCP)** for **World of Warcraft (WoW) 1.12.1 and 1.14.2**. It is more customizable than the original addon and introduces new features, including the ability to control bots when you are dead. Additionally, it replaces text-based target markers with sorted icons for a more intuitive experience.
 
 ## ✨ Features
 
