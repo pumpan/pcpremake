@@ -4,6 +4,14 @@
 ![WoW Version](https://img.shields.io/badge/WoW-1.12.1-ff69b4)
 ![WoW Version](https://img.shields.io/badge/WoW-1.14.2-ff69b4)
 ![License](https://img.shields.io/badge/license-MIT-green)
+<a href="https://www.paypal.com/donate/?hosted_button_id=JCVW2JFJMBPKE" target="_blank">
+    <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" 
+         alt="Donate with PayPal" style="border: 0;">
+</a>
+<a href="https://www.paypal.com/donate/?hosted_button_id=JCVW2JFJMBPKE" class="paypal-button" target="_blank">
+    💙 Support Me with PayPal
+</a>
+
 
 ## 📋 Table of Contents
 - [Overview](#overview)
