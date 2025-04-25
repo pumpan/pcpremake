@@ -93,6 +93,14 @@ This addon is a remake of the **PartyBot Command Panel (PCP)** for **World of Wa
 
 ## 📅 Changelog
 
+**PCPRemake 1.1.0**  
+
+    🛠 Improvements: Fixed unpause all button wich wasnt working if you had a target.e.   
 **PCPRemake 1.0.0**  
-🆕 **NEW:** First release.
+
+    🆕 **NEW:** First release.
+
+
+
+
 
