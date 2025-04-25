@@ -74,17 +74,18 @@ This addon is a remake of the **PartyBot Command Panel (PCP)** for **World of Wa
 
 ## 🛠️ Installation
 
-1. **Download the Addon:**  
-   - https://github.com/pumpan/pcpremake/releases/tag/v.1.0.0
+1. **Download the Addon:**
+    
+[![DOWNLOAD](https://img.shields.io/github/downloads/pumpan/pcpremake/total?color=blue&label=DOWNLOAD)](https://github.com/pumpan/pcpremake/releases)
 
-2. **Extract Files:**  
+3. **Extract Files:**  
    - Extract the contents to your WoW addons directory, typically located at:  
      ```
      World of Warcraft/Interface/AddOns
      ```
    - Rename the folder to `PCP`.
 
-3. **Enable the Addon:**  
+4. **Enable the Addon:**  
    - Launch WoW and go to the AddOns menu from the character selection screen.  
    - Ensure that the addon is enabled in the list.
 
