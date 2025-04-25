@@ -1,6 +1,6 @@
 # PCPRemake
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
+[![Version](https://img.shields.io/github/v/release/pumpan/pcpremake?color=blue&label=version)](https://github.com/pumpan/pcpremake/releases)
 ![WoW Version](https://img.shields.io/badge/WoW-1.12.1-ff69b4)
 ![WoW Version](https://img.shields.io/badge/WoW-1.14.2-ff69b4)
 ![License](https://img.shields.io/badge/license-MIT-green)
