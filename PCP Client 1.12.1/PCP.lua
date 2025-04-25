@@ -270,7 +270,7 @@ settingsFrame:Hide()
 
 local versionText = settingsFrame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
 versionText:SetPoint("BOTTOMRIGHT", settingsFrame, "BOTTOMRIGHT", -10, 10) 
-versionText:SetText("Version 1.0") 
+versionText:SetText("Version 1.1") 
 versionText:SetTextColor(1, 1, 1, 1) 
 
 
@@ -873,7 +873,7 @@ local commands = {
 
     {"CmdAOE", "AoE", -65, 20, function() SetCommand("aoe") end, 80, 30},  
     {"CmdPauseAll", "Pause all", 0, 20, function() SetCommand("pause all") end, 80, 30},  
-    {"CmdUnpauseAll", "Unpause all", 65, 20, function() SetCommand("unpause") end, 80, 30},  
+    {"CmdUnpauseAll", "Unpause all", 65, 20, function() SetCommand("unpause all") end, 80, 30},  
 
     {"CmdStay", "Stay", -65, -10, function() SetCommand("stay") end, 80, 30},  
     {"CmdMove", "Move", 0, -10, function() SetCommand("move") end, 80, 30},   
