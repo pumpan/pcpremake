@@ -161,8 +161,8 @@ end)
 	
 	local classDisplayFontString = overlayLayer:CreateFontString("classDisplay", "OVERLAY", "GameFontNormal")
 	classDisplayFontString:SetText(classNames[currentClassIndex])
-	classDisplayFontString:SetHeight(220)
-	classDisplayFontString:SetWidth(20)
+	classDisplayFontString:SetHeight(20)
+	classDisplayFontString:SetWidth(220)
 	classDisplayFontString:SetPoint("CENTER", 0, -60)
 
 	
@@ -277,8 +277,7 @@ versionText:SetTextColor(1, 1, 1, 1)
 local ClickBlockerFrame = CreateFrame("Frame", "ClickBlockerFrame", UIParent)
 ClickBlockerFrame:SetAllPoints(UIParent) 
 ClickBlockerFrame:EnableMouse(true) 
-ClickBlockerFrame:SetFrameStrata("DIALOG") 
-ClickBlockerFrame:SetFrameStrata("BACKGROUND")  
+ClickBlockerFrame:SetFrameStrata("DIALOG")  
 ClickBlockerFrame:SetFrameLevel(1)  
 ClickBlockerFrame:Hide() 
 
@@ -389,19 +388,16 @@ end
 function ShowReloadConfirmation(selectedColor)
     
     if PCPReloadFrame then
+        PCPReloadFrame.yesButton:SetScript("OnClick", function()
+            toggleButtonAppearance(true, selectedColor)
+            ReloadUI()
+        end)
         PCPReloadFrame:Show()
         return
     end
 
     
     local reloadFrame = CreateFrame("Frame", "PCPReloadFrame", UIParent)
-	reloadFrame:SetBackdrop({
-		bgFile = "Interface/Tooltips/UI-Tooltip-Background",
-		edgeFile = "Interface/DialogFrame/UI-DialogBox-Border",
-		tile = true, tileSize = 16, edgeSize = 16,
-		insets = { left = 4, right = 4, top = 4, bottom = 4 },
-	})
-	reloadFrame:SetBackdropColor(0, 0, 0, 0.8)
 
     reloadFrame:SetWidth(300)
 	reloadFrame:SetHeight(100)
@@ -431,9 +427,10 @@ function ShowReloadConfirmation(selectedColor)
     yesButton:SetPoint("BOTTOMLEFT", reloadFrame, "BOTTOMLEFT", 40, 10)
     yesButton:SetText("Yes")
     yesButton:SetScript("OnClick", function()
-        toggleButtonAppearance(true, selectedColor) 
-        ReloadUI() 
+        toggleButtonAppearance(true, selectedColor)
+        ReloadUI()
     end)
+    reloadFrame.yesButton = yesButton
 
     
     local noButton = CreateFrame("Button", nil, reloadFrame, "UIPanelButtonTemplate")
@@ -490,7 +487,7 @@ local controllDeadBotsCheck = CreateFrame("CheckButton", "PCPcontrollDeadBotsChe
 controllDeadBotsCheck:SetPoint("TOPLEFT", settingsFrame, "TOPLEFT", 10, -100)
 controllDeadBotsCheck.text = controllDeadBotsCheck:CreateFontString(nil, "OVERLAY", "GameFontNormal")
 controllDeadBotsCheck.text:SetPoint("LEFT", controllDeadBotsCheck, "RIGHT", 5, 0)
-controllDeadBotsCheck.text:SetText("Dead Controll")
+controllDeadBotsCheck.text:SetText("Dead Control")
 controllDeadBotsCheck:SetChecked(true)  
 controllDeadBotsCheck:SetScript("OnEnter", function()
     GameTooltip:SetOwner(this, "ANCHOR_RIGHT")
@@ -760,11 +757,10 @@ end
 local eventFrame = CreateFrame("Frame")
 eventFrame:RegisterEvent("ADDON_LOADED")
 eventFrame:SetScript("OnEvent", function()
-
+    if arg1 == "PCP" then
         LoadSavedSettings()
-
+    end
 end)
-LoadSavedSettings()
 
 
 
@@ -1106,7 +1102,7 @@ local function createMarkCommandButton(name, iconPath, tooltipText, xOffset, yOf
 
         button = CreateFrame("Button", name, parentFrame)
         local fontString = button:CreateFontString(nil, "OVERLAY", "GameFontNormal") 
-        fontString:SetPoint("CENTER", UIParent, "CENTER")
+        fontString:SetPoint("CENTER", button, "CENTER")
         button:SetFontString(fontString) 
 
 
@@ -1586,7 +1582,8 @@ local frameHeights = {
 end)
 	
     PCPFrameRemake = frame
-end	
+    tinsert(UISpecialFrames, "PCPFrameRemake")
+end
 
 
 
@@ -1713,16 +1710,12 @@ end
 PCPFrameRemake:Hide()
 
 
-local PCPFrameRemakeShown = false
-
-
 function PCPButtonFrame_Toggle()
-    if PCPFrameRemakeShown then
+    if PCPFrameRemake:IsShown() then
         PCPFrameRemake:Hide()
     else
         PCPFrameRemake:Show()
     end
-    PCPFrameRemakeShown = not PCPFrameRemakeShown  
 end
 
 
@@ -1825,39 +1818,30 @@ function GetChatChannel()
 end
 
 function SetCommand(arg)
-    local chatChannel = GetChatChannel()
-
     if controlDeadBotsEnabled then
-        SendChatMessage(CMD_GENERAL .. arg, chatChannel)
-		
+        SendChatMessage(CMD_GENERAL .. arg, "RAID")
     else
+        local chatChannel = GetChatChannel()
         SendChatMessage(CMD_GENERAL .. arg, chatChannel)
-        
     end
 end
 
 function SetPause()
-    local chatChannel = GetChatChannel()
-
     if controlDeadBotsEnabled then
-        SendChatMessage(CMD_GENERAL .. " pause ", chatChannel)
-		
+        SendChatMessage(CMD_GENERAL .. " pause ", "RAID")
     else
+        local chatChannel = GetChatChannel()
         SendChatMessage(CMD_GENERAL .. " pause ", chatChannel)
-        
     end
 end
 
 
 function SetUnpause()
-    local chatChannel = GetChatChannel()
-
     if controlDeadBotsEnabled then
-        SendChatMessage(CMD_GENERAL .. " unpause ", chatChannel)
-        
+        SendChatMessage(CMD_GENERAL .. " unpause ", "RAID")
     else
+        local chatChannel = GetChatChannel()
         SendChatMessage(CMD_GENERAL .. " unpause ", chatChannel)
-        
     end
 end
 
@@ -1896,26 +1880,24 @@ function MarkSUB()
     if Marks[MarkItr] == "ccmark" then
         markButton:SetText("CC Mark")
     elseif Marks[MarkItr] == "focusmark" then
-        markButton:SetText("Fokus Mark")
+        markButton:SetText("Focus Mark")
     end
 end
 
 function SetMark(arg)
-	SendChatMessage(CMD_GENERAL .. AddMark .. " " .. arg);
-
+	SendChatMessage(CMD_GENERAL .. AddMark .. " " .. arg, GetChatChannel());
 end
 
 function ShowMark()
-	SendChatMessage(CMD_GENERAL .. AddMark);
-	
+	SendChatMessage(CMD_GENERAL .. AddMark, GetChatChannel());
 end
 
 function ClearMark()
-	SendChatMessage(CMD_GENERAL .. "clear " .. AddMark);
+	SendChatMessage(CMD_GENERAL .. "clear " .. AddMark, GetChatChannel());
 end
 
 function ClearAllMark()
-	SendChatMessage(CMD_GENERAL .. "clear");
+	SendChatMessage(CMD_GENERAL .. "clear", GetChatChannel());
 end
 
 AddToggle = "aoe"
@@ -1958,35 +1940,29 @@ function SetToggle()
 end
 
 function SubPartyBotClone(self)
-	SendChatMessage(CMD_PARTYBOT_CLONE);
+	SendChatMessage(CMD_PARTYBOT_CLONE, GetChatChannel());
 end
 
 function SubPartyBotRemove(self)
-	SendChatMessage(CMD_PARTYBOT_REMOVE);
+	SendChatMessage(CMD_PARTYBOT_REMOVE, GetChatChannel());
 end
 
 
 function SubPartyBotMoveAll()
-    local chatChannel = GetChatChannel()
-
     if controlDeadBotsEnabled then
-        SendChatMessage(CMD_PARTYBOT_MAll, chatChannel)
-        
+        SendChatMessage(CMD_PARTYBOT_MAll, "RAID")
     else
+        local chatChannel = GetChatChannel()
         SendChatMessage(CMD_PARTYBOT_MAll, chatChannel)
-        
     end
 end
 
 function SubPartyBotStayAll()
-    local chatChannel = GetChatChannel()
-
     if controlDeadBotsEnabled then
-        SendChatMessage(CMD_PARTYBOT_SAll, chatChannel)
-        
+        SendChatMessage(CMD_PARTYBOT_SAll, "RAID")
     else
+        local chatChannel = GetChatChannel()
         SendChatMessage(CMD_PARTYBOT_SAll, chatChannel)
-        
     end
 end
 
