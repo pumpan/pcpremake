@@ -61,10 +61,6 @@ This addon is a remake of the **PartyBot Command Panel (PCP)** for **World of Wa
 - **Macro Mode**
   - buttons insert commands into macro window instead of sending them.
 
-
-#### 🛠 Fixed
-- Fixed Macro Mode not working consistently across all buttons.
-
 - **Reset Frame Position:**
   - Use the command:
     ```
