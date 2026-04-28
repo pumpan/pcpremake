@@ -57,6 +57,14 @@ This addon is a remake of the **PartyBot Command Panel (PCP)** for **World of Wa
 - **Control Bots When Dead:**
   - Maintain control of bots even when your character has died.
 
+
+- **Macro Mode**
+  - buttons insert commands into macro window instead of sending them.
+
+
+#### 🛠 Fixed
+- Fixed Macro Mode not working consistently across all buttons.
+
 - **Reset Frame Position:**
   - Use the command:
     ```
