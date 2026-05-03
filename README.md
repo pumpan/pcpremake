@@ -171,6 +171,85 @@ This addon is a remake of the **PartyBot Command Panel (PCP)** for **World of Wa
    - Click the icon on the minimap.
 
 ## 📅 Changelog
+---
+
+### 🚀 PCPRemake 2.0.0
+
+> Major overhaul – PCP is now a fully dynamic and customizable UI system
+
+---
+
+### ✨ New Features
+
+#### 🎮 Gameplay & Systems
+- Added **Macro Mode**
+  - Buttons insert commands into macro window instead of sending them :contentReference[oaicite:0]{index=0}
+- Added **Paladin Blessing Rotation system**
+  - Automatically cycles blessings when adding Paladins
+- Added full **Shaman Totem system**
+  - 4 independent totem slots (Air / Earth / Fire / Water)
+  - Visual 2x2 icon layout
+  - Quick-change per slot
+
+---
+
+#### 🎨 UI & Visuals
+- Added **full theme system**
+  - Multiple styles (DathW, WarcraftGold, etc.)
+- Added **gradient buttons**
+- Added **hover effects & pressed states**
+- Added **subtle animated gradients**
+- Switched to **icon-based UI**
+
+---
+
+#### 📐 Layout System
+- Added **Free section layout**
+  - ALT + drag to move sections
+- Added **snap-to-grid system**
+- Added **resizable sections**
+- Added **separate controls section (settings + close)**
+
+---
+
+#### ⚙️ Settings & UX
+- Added **live settings (no reload required)**
+- Added **click-outside-to-close settings**
+- Fixed settings appearing under other addons
+- Improved settings layout (dynamic sizing)
+
+---
+
+### 🔧 Improvements
+
+- Fully **rewritten UI in Lua** (removed XML)
+- Improved **performance & rendering**
+- Improved **tooltip system**
+  - Dynamic & context-aware
+- Improved **button styling & borders**
+- Improved **class-based UI behavior**
+- Improved **layout stability**
+- Improved **theme switching (live updates)**
+
+---
+
+### 🧹 Changes
+
+- Removed outdated UI limitations from original PCP
+- Cleaned up button logic and layout handling
+- Simplified user interaction (fewer unnecessary buttons)
+
+---
+
+### 🐛 Fixes
+
+- Fixed theme/gradient issues on reload
+- Fixed UI layering issues (frames appearing behind others)
+- Fixed layout inconsistencies when resizing
+- Fixed button overlap & scaling issues
+- General stability fixes
+
+---
 
 ### PCPRemake 1.2.0
 
