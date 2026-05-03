@@ -28,11 +28,40 @@ This addon is a remake of the **PartyBot Command Panel (PCP)** for **World of Wa
 
 ## ✨ Features
 
-- **Resizable Frame:**
-  - Resize the frame to better fit your screen by dragging the handle in the bottom-right corner.
+### 🎮 Gameplay & Bot Control
+- **Control Bots When Dead**
+  - Maintain full control even after your character dies
 
-- **Themes:**
-  - Choose from various themes to customize the panel's appearance.
+- **Macro Mode**
+  - Buttons insert commands into the macro window instead of sending them :contentReference[oaicite:0]{index=0}
+  - Perfect for building macros quickly
+
+---
+
+### 🧙 Class-Specific Systems
+
+#### Paladin
+- Automatic **Blessing rotation system**
+- Each new Paladin gets the next blessing (BoK → BoM → BoW → BoL → BoS)
+- Current blessing is shown directly on the spawn button
+- Toggleable in settings
+
+#### Shaman
+- Full **Totem system**
+- 4 independent slots:
+  - Air / Earth / Fire / Water
+- Visual 2x2 icon layout on the button
+- Quick-change per slot (right-click)
+- Live updates (icons + tooltip)
+
+---
+
+### 🎨 UI & Visuals
+
+- **Themes**
+  - Multiple built-in styles (DathW, DarkGlass, WarcraftGold, etc.)
+  - Gradient buttons with hover effects
+  - Subtle animated gradients for a more “alive” UI
 
 <p align="center">
   <img src="screens/4.jpg" alt="Preset Selection" width="200">
@@ -43,39 +72,82 @@ This addon is a remake of the **PartyBot Command Panel (PCP)** for **World of Wa
   <em>(Not showing all themes)</em>
 </p>
 
+- **Icon-based UI**
+  - Clean interface using icons instead of text
+  - Context-aware buttons (changes based on class)
+
+- **Improved Tooltips**
+  - Dynamic & context-aware
+  - Updates live when changing settings
+
+---
+
+### 📐 Layout & Customization
+
+<p align="center">
+  <img src="screens/fullscreen.jpg" alt="Preset Selection" width="700">
+  <br>
+</p>
+
+- **Resizable Frame**
+  - Drag the bottom-right corner to resize the panel
+
+- **Free Section Layout**
+  - Hold **ALT + drag** to move sections
+  - Optional snap-to-grid system
+  - Save custom layouts
+
+- **Resizable Sections**
+  - Resize individual sections independently
+
+---
+
+### ⚙️ Settings & Control
+
 <p align="center">
   <img src="screens/sett.jpg" alt="Settings" width="100">
 </p>
 
-- **Backdrop and Title Background:**
-  - Choose whether to display a backdrop behind the command panel and a background for the titles (like "Come Commands," "Stay Commands," "Move Commands").
-- **New minimap button:**
-  <p align="center">
+- **Live Settings (no reload required)**
+- Options include:
+  - Macro Mode
+  - Paladin rotation
+  - Free layout
+  - Snap layout
+  - Resizable sections
+
+- **Click-outside-to-close settings**
+- Settings always appear above other addons
+
+---
+
+### 🧱 Panel & Behavior
+
+- **Backdrop and Title Background**
+  - Toggle background and section titles (Come / Move / Stay)
+
+- **New Minimap Button**
+<p align="center">
   <img src="screens/minimapbutton.png" alt="Settings" width="100">
 </p>
 
-- **Control Bots When Dead:**
-  - Maintain control of bots even when your character has died.
-
-
-- **Macro Mode**
-  - buttons insert commands into macro window instead of sending them.
-
-- **Reset Frame Position:**
-  - Use the command:
+- **Reset Frame Position**
+  - Command:
     ```
     /movepcp
     ```
-    This moves the PCP frame to your cursor, resolving an issue from the original addon where the frame sometimes appeared off-screen.
+  - Moves the panel to your cursor if it goes off-screen
 
-- **Other Improvements Over the Original Addon:**
-  - Icons instead of text for CC marks and focus targets, sorted in the same order as when marking a target.
-  - Removed the "Add" button; now you add a bot by clicking the "role button" (e.g., "Tank").
-  - Removed the "Add Random" button (it seemed unnecessary to add a random bot).
-  - Moved the close button from the bottom to the upper right corner.
-  - Changed the minimap button image.
-  - Removed everything from the XML file and remade every button and frame in the Lua file, which opened up new possibilities, such as resizing the frame.
+---
 
+### 🔧 Improvements Over Original PCP
+
+- Fully rewritten in **Lua (no XML)**
+- Dynamic UI system (resizing, layout, live updates)
+- Icons instead of text for CC marks and focus targets
+- Cleaner and more modern interface
+- Removed unnecessary buttons (Add Random, etc.)
+- Improved button placement and usability
 ## 🛠️ Installation
 
 1. **Download the Addon:**
