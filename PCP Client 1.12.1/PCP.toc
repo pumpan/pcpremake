@@ -1,12 +1,11 @@
 ## Interface: 11200
 ## Title: |cffeda55fPartyBot|r Control Panel
-## Notes: PartyBot Control Panel.
-## Notes-zhCN: PartyBot Control Panel.
-## Author: Remake by pumpan
+## Notes: PartyBot Control Panel for SoloCraft server.
+## Notes-zhCN: PartyBot Control Panel for the SoloCraft server.
+## Author: Leontiesh (Edited by Solo for SoloCraft.org) (re-edited by pumpan)
 ## DefaultState: Enabled
-## Version: 1.0.0
-## SavedVariables: PCP_Settings
-
+## Version: 1.4.0
+## SavedVariables: PCP_Settings, PCP_MinimapDB
 
 PCP.lua
 PCP.xml
