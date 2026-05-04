@@ -1,4 +1,4 @@
-<!-- Core Addon by Leontiesh (Ace) Remake by Pumpan -->
+<!-- Addon by Leontiesh (Ace) (Edited by Solo for SoloCraft.org) -->
 <Ui xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.blizzard.com/wow/ui/">
 
 	<Script file="PCP.lua" />
@@ -6,6 +6,7 @@
 	<Frame name="PCPFrameRemake" parent="UIParent" toplevel="true" enableMouse="true" movable="true">
 
 		<Scripts>
+			<!-- <OnLoad>PCPFrameRemake:RegisterForDrag("LeftButton");PCPFrameRemake:Hide();this:RegisterEvent("PLAYER_LOGIN");</OnLoad> -->
 			<OnLoad>
 				PCPFrameRemake_OnLoad(self);
 			</OnLoad>
