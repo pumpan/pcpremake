@@ -8,5 +8,6 @@
 ## SavedVariables: PCP_Settings
 
 
+PCP_IconList.lua
 PCP.lua
 PCP.xml
