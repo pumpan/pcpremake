@@ -2,7 +2,7 @@ local version, build, date, tocversion = GetBuildInfo()
 
 local PCP_ADDON_NAME = "PCP"
 local PCP_VERSION_PREFIX = "PCPRemake1142"
-local PCP_VERSION = "3.0.0"
+local PCP_VERSION = "3.0.1"
 local PCP_VA = "3"
 
 function PCPFrameRemake_OnLoad(self)
@@ -1329,10 +1329,13 @@ function toggleButtonAppearance(enabled, color)
 
             if not button._pcpOriginalNormal then
                 button._pcpOriginalNormal = button:CreateTexture(nil, "ARTWORK")
-                button._pcpOriginalNormal:SetTexture("Interface\\Buttons\\UI-Panel-Button-Up")
-                button._pcpOriginalNormal:SetTexCoord(0, 0.625, 0, 0.6875)
                 button._pcpOriginalNormal:SetAllPoints(button)
             end
+            
+            
+            
+            button._pcpOriginalNormal:SetTexture("Interface\\Buttons\\UI-Panel-Button-Up")
+            button._pcpOriginalNormal:SetTexCoord(0, 0.625, 0, 0.6875)
             button._pcpOriginalNormal:SetVertexColor(1, 1, 1, 1)
             button._pcpOriginalNormal:Show()
             button:SetNormalTexture(button._pcpOriginalNormal)
@@ -1349,20 +1352,20 @@ function toggleButtonAppearance(enabled, color)
 
             if not button._pcpOriginalPushed then
                 button._pcpOriginalPushed = button:CreateTexture(nil, "PUSHED")
-                button._pcpOriginalPushed:SetTexture("Interface\\Buttons\\UI-Panel-Button-Down")
-                button._pcpOriginalPushed:SetTexCoord(0, 0.625, 0, 0.6875)
                 button._pcpOriginalPushed:SetAllPoints(button)
             end
+            button._pcpOriginalPushed:SetTexture("Interface\\Buttons\\UI-Panel-Button-Down")
+            button._pcpOriginalPushed:SetTexCoord(0, 0.625, 0, 0.6875)
             button._pcpOriginalPushed:SetVertexColor(1, 1, 1, 1)
             button._pcpOriginalPushed:Show()
             button:SetPushedTexture(button._pcpOriginalPushed)
 
             if not button._pcpOriginalDisabled then
                 button._pcpOriginalDisabled = button:CreateTexture(nil, "DISABLED")
-                button._pcpOriginalDisabled:SetTexture("Interface\\Buttons\\UI-Panel-Button-Disabled")
-                button._pcpOriginalDisabled:SetTexCoord(0, 0.625, 0, 0.6875)
                 button._pcpOriginalDisabled:SetAllPoints(button)
             end
+            button._pcpOriginalDisabled:SetTexture("Interface\\Buttons\\UI-Panel-Button-Disabled")
+            button._pcpOriginalDisabled:SetTexCoord(0, 0.625, 0, 0.6875)
             button._pcpOriginalDisabled:SetVertexColor(1, 1, 1, 1)
             button._pcpOriginalDisabled:Show()
             button:SetDisabledTexture(button._pcpOriginalDisabled)
@@ -4542,7 +4545,7 @@ end)
                 if first == "/" then
                     runSlashLine(line)
                 else
-                    -- Dot commands like .go/.partybot are server chat commands, so send them as chat.
+                    
                     runChatLine(line)
                 end
             end
@@ -7390,7 +7393,7 @@ function JoinWorld()
 	end
 end
 
-local PCP_VC = "0"
+local PCP_VC = "1"
 
 local PCP_GUARD = string.format("%d.%d.%d", PCP_VA, PCP_VB, PCP_VC)
 local PCP_GITHUB_URL = "https://github.com/pumpan/PCPRemake"
