@@ -7562,7 +7562,18 @@ end
 
 local function PCP_MaybeShowUpdateVersionPopup()
     if not PCP_HasTrackedUpdateVersion() then return end
-    if PCP_Settings and PCP_Settings.ignoredUpdateVersion == PCP_Settings.lastNotifiedVersion then return end
+    if not PCP_Settings then PCP_Settings = {} end
+
+    local latestVersion = PCP_Settings.lastNotifiedVersion
+    if PCP_Settings.ignoredUpdateVersion == latestVersion then return end
+
+    -- Avoid popup spam when several guild members report the same newer version.
+    -- The popup is shown automatically only once per detected version.
+    -- Clicking the version text in Settings still opens the popup manually.
+    if PCP_Settings.lastUpdatePopupVersionSeen == latestVersion then return end
+    PCP_Settings.lastUpdatePopupVersionSeen = latestVersion
+
+    if PCP_UpdateVersionPopup and PCP_UpdateVersionPopup:IsShown() then return end
     PCP_ShowUpdateVersionPopup()
 end
 
